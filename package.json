@@ -33,3 +33,15 @@
   "author": "Congregação O Alvo Curitiba",
   "license": "MIT"
 }
+
+{
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "build": "npx prisma generate",
+    "postinstall": "npx prisma generate",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "seed": "node prisma/seed.js"
+  }
+}
