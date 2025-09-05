@@ -6,10 +6,10 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
+    "build": "npx prisma generate",
+    "postinstall": "npx prisma generate",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
-    "prisma:studio": "prisma studio",
-    "prisma:deploy": "prisma migrate deploy",
     "seed": "node prisma/seed.js"
   },
   "dependencies": {
@@ -32,16 +32,4 @@
   "keywords": ["sistema", "doacao", "igreja", "estoque"],
   "author": "Congregação O Alvo Curitiba",
   "license": "MIT"
-}
-
-{
-  "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
-    "build": "npx prisma generate",
-    "postinstall": "npx prisma generate",
-    "prisma:generate": "prisma generate",
-    "prisma:migrate": "prisma migrate dev",
-    "seed": "node prisma/seed.js"
-  }
 }
